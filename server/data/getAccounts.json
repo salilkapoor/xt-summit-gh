@@ -1,0 +1,24 @@
+{
+  "data": {
+    "getAccounts": [
+      {
+        "accountNumber": 1111,
+        "accountType": "Raam's Salary Account",
+        "balance": 55000,
+        "businessEntity": "NA Bank"
+      },
+      {
+        "accountNumber": 1222,
+        "accountType": "Savings",
+        "balance": 5000,
+        "businessEntity": "NA Bank"
+      },
+      {
+        "accountNumber": 1333,
+        "accountType": "Retirement Fund",
+        "balance": 10000,
+        "businessEntity": "NA Bank"
+      }
+    ]
+  }
+}

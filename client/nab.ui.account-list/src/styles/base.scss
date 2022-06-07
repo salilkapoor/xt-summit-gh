@@ -1,0 +1,9 @@
+@import './abstracts/variables';
+@import "./base/resets.scss";
+@import "./base/typography";
+
+
+#nab-account-list {
+  background-color: $token-theme-color-grey-10;
+  padding: $token-spacing-4;
+}

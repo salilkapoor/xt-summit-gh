@@ -1,0 +1,18 @@
+@import '../../../styles/main.scss';
+
+.transfer__cta {
+  background-color: $token-theme-color-dark-blue;
+  color: $token-theme-color-white;
+  border-radius: $token-border-radius-sm;
+  border: 2px solid $token-theme-color-black;
+  font-size: $token-font-size-base;
+  font-weight: $token-font-weight-lg;
+  padding: $token-spacing-2 $token-spacing-3;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $token-theme-color-dark-blue;
+    background-color: $token-theme-color-white;
+    color: $token-theme-color-dark-blue;
+  }
+}

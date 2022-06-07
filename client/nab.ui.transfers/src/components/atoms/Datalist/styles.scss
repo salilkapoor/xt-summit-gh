@@ -1,0 +1,37 @@
+@import '../../../styles/main.scss';
+
+.list {
+  &__label {
+    font-size: $token-font-size-base;
+    font-weight: $token-font-weight-lg;
+  }
+
+  &__input {
+    padding: $token-spacing-2 $token-spacing-3;
+    font-weight: $token-font-weight-lg;
+  }
+
+  &__amount {
+    flex: 1;
+    border: none;
+    outline: none;
+  }
+  &__displayBalance {
+    font-size: $token-font-size-s-lg;
+    font-weight: $token-font-weight-lg;
+    margin-bottom: 2rem;
+    text-decoration: dotted;
+  }
+  &__amount-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $token-theme-color-input;
+    border-radius: $token-border-radius-o-sm;
+    margin-bottom: $token-spacing-8;
+    padding-left: $token-spacing-2;
+    &:focus-visible {
+      outline: -webkit-focus-ring-color auto 1px;
+    }
+  }
+}

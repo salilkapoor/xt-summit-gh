@@ -1,0 +1,84 @@
+@import '../../../styles/main.scss';
+
+.highlighted-tile {
+  border-radius: $token-border-radius-lg;
+  &:not(:last-child) {
+    margin-bottom: $token-spacing-4;
+  }
+  padding: 5px;
+  &--from {
+    animation-name: from-state;
+    animation-duration: 15s;
+  }
+
+  &--to {
+    animation-name: to-state;
+    animation-duration: 15s;
+  }
+
+  @keyframes from-state {
+    5% {
+      background-color: #f93154;
+    }
+    100% {
+      background-color: transparent;
+    }
+  }
+
+  @keyframes to-state {
+    5% {
+      background-color: #00b74a;
+    }
+    100% {
+      background-color: transparent;
+    }
+  }
+}
+
+.account-tile {
+  background-color: $token-theme-color-white;
+  border: 1px solid $token-theme-color-grey-20;
+  border-radius: $token-border-radius-lg;
+  padding: $token-spacing-2 $token-spacing-4;
+  font-size: $token-font-size-lg;
+
+  &__header,
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__footer {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__header {
+    margin-bottom: $token-spacing-1;
+    &__type {
+      font-weight: $token-font-weight-xlg;
+      font-size: $token-font-size-xlg;
+    }
+    &__entity {
+      font-size: $token-font-size-base;
+    }
+  }
+
+  &__body {
+    margin-bottom: $token-spacing-4;
+    &__balance {
+      font-size: $token-font-size-xlg;
+    }
+    &__number {
+      font-weight: $token-font-weight-lg;
+    }
+  }
+  &__footer {
+    &__cta {
+      background-color: transparent;
+      flex-grow: 1;
+      border: 1px solid $token-theme-color-grey-10;
+      padding: $token-spacing-1;
+    }
+  }
+}

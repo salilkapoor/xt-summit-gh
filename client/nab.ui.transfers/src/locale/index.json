@@ -1,0 +1,8 @@
+{
+  "TRANSFERS_TITLE": "Transfers",
+  "FROM_LABEL": "From",
+  "TO_LABEL": "To",
+  "AMOUNT_LABEL": "Amount",
+  "TRANSFER_TEXT": "Transfer",
+  "EMPTY_ACCOUNT": "No account selected"
+}

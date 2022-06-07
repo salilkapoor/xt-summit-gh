@@ -1,0 +1,48 @@
+@import '../../../styles/main.scss';
+
+.dashboard__main {
+  padding: $token-spacing-4;
+  max-width: 1200px;
+  min-height: 70vh;
+  margin: 0 auto;
+  &__header {
+    margin-bottom: $token-spacing-4;
+  }
+  &__zone {
+    margin-bottom: $token-spacing-4;
+  }
+}
+
+.dashboard__main-content {
+  display: grid;
+  columns: 3;
+  column-gap: $token-spacing-8;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.skeleton {
+  background-color: $token-theme-color-off-white;
+  border: 1px dashed $token-theme-color-grey-20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: $token-font-weight-xlg;
+  font-size: $token-font-size-xxlg;
+  letter-spacing: 0.2rem;
+}
+.header {
+  min-height: 10vh;
+  @extend .skeleton;
+}
+
+.footer {
+  min-height: 16vh;
+  @extend .skeleton;
+}
+
+.base {
+  min-height: 28vh;
+  border-radius: $token-border-radius-lg;
+  @extend .skeleton;
+  margin-bottom: $token-spacing-4;
+}

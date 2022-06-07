@@ -1,0 +1,10 @@
+@import './abstracts/variables';
+@import './base/resets.scss';
+@import './base/typography';
+
+#nab-dashboard {
+  background-color: $token-theme-color-grey-10;
+  padding: $token-spacing-4;
+  min-height: 100vh;
+  padding: 0;
+}

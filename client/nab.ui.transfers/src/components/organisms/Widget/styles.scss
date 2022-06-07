@@ -1,0 +1,17 @@
+@import '../../../styles/main.scss';
+
+.transfer-widget {
+  display: flex;
+  flex-direction: column;
+  background-color: $token-theme-color-white;
+  border: 1px solid $token-theme-color-grey-20;
+  border-radius: $token-border-radius-lg;
+  padding: $token-spacing-4;
+
+  *:not(label):not(p):not(.list__amount-container):not(:last-child) {
+    margin-bottom: $token-spacing-3;
+  }
+  label {
+    margin-bottom: $token-spacing-2;
+  }
+}
